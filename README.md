@@ -8,7 +8,7 @@
 
 ![Flask site](images/preview.png)
 
-
+![Structure](images/structure.png)
 
 
 🛠️ My Microservice
