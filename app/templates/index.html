@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="jumbotron mt-5">
+    <h1 class="display-4">Welcome to my microservice!</h1>
+    <p class="lead">This is a simple HTML page served by a Python Flask application.</p>
+    <hr class="my-4">
+    <p id="time"></p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+<script>
+    function displayTime() {
+        var now = new Date();
+        document.getElementById('time').innerText = now.toLocaleTimeString();
+    }
+    setInterval(displayTime, 1000);
+</script>
+{% endblock %}
